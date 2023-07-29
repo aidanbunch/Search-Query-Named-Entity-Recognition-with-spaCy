@@ -47,5 +47,5 @@ def write_to_file(destination_file, training_data):
         f.write(contents)
 
 if __name__ == "__main__":
-    training_data = csv_to_spacy_format("output.csv")
+    training_data = csv_to_spacy_format(f'{data_dir}/cleaned_input.csv')
     write_to_file(f'{data_dir}/processed/training_data.py', training_data=training_data)

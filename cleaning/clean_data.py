@@ -23,11 +23,11 @@ for i, line in enumerate(lines):
         line.append('')
     lines[i] = line
 
-with open(f'{data_dir}/interim/formatted_input.csv', 'w', newline='') as outfile:
+with open(f'{data_dir}/interim/formatted_for_cleaning.csv', 'w', newline='') as outfile:
     writer = csv.writer(outfile)
     writer.writerows(lines)
 
-df = pd.read_csv(r'data/interim/formatted_input.csv')
+df = pd.read_csv(f'{data_dir}/interim/formatted_for_cleaning.csv')
 
 df.drop_duplicates(inplace=True)
 
