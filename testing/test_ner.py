@@ -23,4 +23,3 @@ for index, query in enumerate(sample_queries):
     print(f"Query #{index + 1}")
     for ent in doc.ents:
         print(f"{ent.label_.upper():{15}}- {ent.text}")
-    print(f"\n")
