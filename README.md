@@ -1,5 +1,5 @@
-# Search-Query-Named-Entity-Recognition-with-spaCy
-This repository contains a project for extracting search filters from natural language queries using custom named entity recognition with spaCy and machine learning.
+# Search Query Named Entity Recognition with spaCy
+This repository contains a project for extracting search filters from natural language queries using custom named entity recognition with spaCy and machine learning. I trained a custom NER model to extract these entities using a dataset saved in CSV format, which is cleaned, converted to the spaCy tuple format in preprocessing and used to train/validate the model.
 
 ## Usage
 Put your CSV input data into the data/raw directory. Make sure the first column is titled "Text" and contains the full string, while every subsequent column represents an entity name and contains the extracted entity values.
